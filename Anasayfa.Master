@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Anasayfa.master.cs" Inherits="Arıza_Tespit_web_sitesi_projesi.Anasayfa" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <style>
+        /* Navbar stilini tanımla */
+        .navbar {
+            background-color: #333; /* Arkaplan rengi */
+            overflow: hidden;
+            font-size:15px
+        }
+
+        /* Navbar linkleri stilini tanımla */
+        .navbar a {
+            float: left; /* Sola yaslama */
+            display: block;
+            color: white; /* Yazı rengi */
+            text-align: center; /* Yazı hizalama */
+            padding: 14px 15px; /* Yatay ve dikey padding */
+            text-decoration: none; /* Altçizgi kaldırma */
+        }
+
+        /* Hover (üzerine gelindiğinde) stilini tanımla */
+        .navbar a:hover {
+            background-color: #ddd; /* Arkaplan rengi */
+            color: black; /* Yazı rengi */
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!-- Navbar -->
+        <div class="navbar">
+            <a href="Anasayfa2.aspx">Anasayfa</a>
+            <a href="Hizmetler.aspx">Hizmetler</a>
+            <a href="HataBildirme.aspx">Hata Bildirme</a>
+            <a href="Sss.aspx">SSS</a>
+            <!-- İhtiyacınıza göre daha fazla madde ekleyebilirsiniz -->
+        </div>
+
+        <!-- Diğer içerik -->
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
